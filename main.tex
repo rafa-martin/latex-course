@@ -1,0 +1,127 @@
+\documentclass[a4paper,11pt]{article}
+
+%% Packages
+\usepackage[main=spanish,english]{babel} % Language
+\usepackage[utf8]{inputenc} % Encoding
+\usepackage{lipsum}         % Dummy text
+\usepackage{amsmath}        % Math
+\usepackage{amssymb}        % Math
+
+\begin{document}
+
+% Title
+\title{My first document}
+\author{Rafael Martín}
+\date{\today}
+\maketitle
+
+\tableofcontents
+
+\begin{abstract}
+\lipsum[2]
+\end{abstract}
+
+\section{Introduction}
+
+Hello World! \LaTeX. The euler formula is:
+\[e^{i\pi} + 1 = 0\] 
+and the riemann integral is:
+\[ \int_{-\infty}^{\infty} \frac{1}{x^2 + 1} dx = \pi \]
+
+\section{Algebra}
+\lipsum[1]
+
+\subsection{Linear algebra}
+\lipsum[1]
+
+\section{Example}
+\lipsum[1]
+\subsection{Example 1}
+
+Sea $\{\tilde{\gamma}_{ij}\}_{0\leq i+j \leq 2n}$ una sucessión
+de números reales tales que $\tilde{\gamma}_{00}>0$. Consideramos 
+${\cal C}[t_1,t_2]$ el conjunto de polinomios complejos en $t_1$ y $t_2$
+de grado $2n$ y definimos $\tilde{\varphi} : {\cal C} \left[t_1,t_2\right]
+\longrightarrow \mathbb{C}$ y el funcional lineal complejo que interpola
+a la sucessión $\tilde{\gamma}_{ij}$, es decir,
+$$\tilde{\varphi}(t_1^it_2^j) = \tilde{\gamma}_{ij}$$.
+
+\subsection{Example 2}
+
+Una fórmula bien conocida es $\sum_{k=1}^{n}=\frac{n(n+1)}{2}$.
+
+Otro ejemplo es $\displaystyle{\int_0^{2\pi} \sin x\ dx = 0}$.
+
+Nótese la diferencia con:
+
+$$\sum_{k=1}^{n}=\frac{n(n+1)}{2}$$
+
+$$\textstyle{\int_0^{2\pi} \sin x\ dx = 0}$$
+
+\subsection{Example 3}
+La siguiente fracción es un montón de cosas:
+$$\frac{\frac{a}{x-y}+\frac{b}{x+y}}{1+\frac{a-b}{a+b}}$$
+
+\subsection{Example 4}
+La siguiente matriz es una matriz:
+$$
+\left(
+    \begin{array}{lll}
+        a & b & c \\
+        d & e & f \\
+        g & h & i \\
+    \end{array}
+\right)
+$$
+
+En cambio la siguiente tiene puntos suspensivos:
+$$
+\left(
+    \begin{array}{ccc}
+        1      & \hdots & n \\
+        2      & \hdots & n+1 \\
+        \vdots & \ddots & \vdots \\
+        n      & \hdots & 2n-1 \\
+    \end{array}
+\right)
+$$
+
+\subsection{Example 5}
+La siguiente es una matriz:
+$$\begin{matrix}
+a & b & c \\ d & e & f \\ g & h & i
+\end{matrix}$$
+$$\begin{pmatrix}
+a & b & c \\ d & e & f \\ g & h & i
+\end{pmatrix}$$
+$$\begin{bmatrix}
+a & b & c \\ d & e & f \\ g & h & i
+\end{bmatrix}$$
+$$\begin{vmatrix}
+a & b & c \\ d & e & f \\ g & h & i
+\end{vmatrix}$$
+$$\begin{Vmatrix}
+a & b & c \\ d & e & f \\ g & h & i
+\end{Vmatrix}$$
+
+%% Euler equation of the second kind
+\begin{equation}
+\label{eq:euler}
+e^{i\pi} + 1 = 0
+\end{equation}
+
+\subsection{Example 6}
+
+The equation \eqref{eq:matrix} is a matrix. This matrix contains
+a lot of things.
+\begin{equation}
+\label{eq:matrix}
+%\tag{matrix}
+\begin{matrix}
+    a & b & c \\ d & e & f \\ g & h & i
+\end{matrix}
+\end{equation}
+
+
+
+\end{document}
